@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>King Construction</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="48x48">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <style>
+        /* Modal Styles */
+        .modal-content {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .modal-header {
+            background-color: #007bff;
+            color: #fff;
+            border-bottom: none;
+            border-radius: 15px 15px 0 0;
+        }
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .modal-body {
+            padding: 2rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .modal-footer {
+            border-top: none;
+            padding: 1rem;
+            text-align: right;
+        }
+        .modal-footer .btn {
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+        /* Button Styles */
+        .btn {
+            border-radius: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar Start-->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="display-4 text-white text-uppercase m-0"></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+            </div>
+            <a href="index.html" class="navbar-brand bg-dark px-4 mx-3 d-none d-lg-block">
+                <h1 class="display-4 text-white text-uppercase m-0">KING</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#project" class="nav-item nav-link">Project</a>
+                <a href="#faqs" class="nav-item nav-link">FAQs</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+     <!--Navbar End-->
+
+    <!-- Carousel star-->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active">
+                    <img class="d-block w-100" src="img/carousel-1.jpeg" alt="First Slide">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h4 class="text-uppercase mb-4">Crafting Excellence</h4>
+                            <h2 class="display-2 mb-4 king-construction">KING CONSTRUCTION</h2>
+                            <a class="btn btn-primary btn-lg" href="#contact">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative">
+                    <img class="d-block w-100" src="img/carousel-4.jpeg" alt="Second Slide">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="text-center">
+                            <h4 class="text-uppercase mb-4">Precision. Innovation. Integrity.</h4>
+                            <h2 class="display-2 mb-4">Transforming Spaces</h2>
+                            <a class="btn btn-primary btn-lg" href="#contact">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <div class="carousel-controls">
+                <a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev">
+                    <div class="carousel-control-icon">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                </a>
+                <a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next">
+                    <div class="carousel-control-icon">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Ajustes generales del carrusel */
+        .carousel-item {
+            height: 100vh;
+        }
+    
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 20px; /* Reducción del padding para mejor ajuste en móviles */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+    
+        .carousel-caption h4, .carousel-caption h2 {
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            text-transform: uppercase;
+        }
+    
+        .carousel-caption h4 {
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+    
+        .carousel-caption h2 {
+            font-weight: 700;
+            font-size: 2.5rem; /* Ajuste del tamaño del texto para mejor visibilidad en móviles */
+        }
+    
+        /* Tamaño específico para KING CONSTRUCTION */
+        .carousel-caption .king-construction {
+            font-size: 8rem; /* Tamaño aumentado para KING CONSTRUCTION */
+        }
+    
+        .carousel-caption .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50px;
+            padding: 12px 30px; /* Ajuste del padding del botón */
+            text-transform: uppercase;
+            border: none;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .carousel-caption .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+    
+        /* Carousel Controls */
+        .carousel-controls {
+            position: absolute;
+            bottom: 5%; /* Ajuste de la posición de los controles */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .carousel-control-prev, .carousel-control-next {
+            width: 40px; /* Ajuste para un tamaño más pequeño en móviles */
+            height: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            color: #fff;
+        }
+    
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            display: none; /* Mantiene los íconos ocultos si usas `carousel-control-icon` */
+        }
+    
+        .carousel-control-icon {
+            font-size: 1.2rem; /* Ajuste para un tamaño más pequeño en móviles */
+        }
+    
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+    
+        /* Media Queries para móviles */
+        @media (max-width: 576px) {
+            .carousel-caption {
+                padding: 10px; /* Reducción del padding para pantallas pequeñas */
+            }
+            
+            .carousel-caption h2 {
+                font-size: 1.5; /* Reducción del tamaño del texto "Transforming Spaces" en pantallas pequeñas */
+            }
+            
+            .carousel-caption .king-construction {
+                font-size: 2.5rem; /* Tamaño reducido para KING CONSTRUCTION en móviles */
+            }
+            
+            .carousel-caption .btn-primary {
+                padding: 10px 20px; /* Reducción del padding del botón en pantallas pequeñas */
+            }
+            
+            .carousel-controls {
+                bottom: 3%; /* Ajuste de la posición de los controles */
+            }
+            
+            .carousel-control-prev, .carousel-control-next {
+                width: 35px; /* Reducción del tamaño de los controles en pantallas pequeñas */
+                height: 35px;
+            }
+            
+            .carousel-control-icon {
+                font-size: 1rem; /* Ajuste del tamaño del ícono en pantallas pequeñas */
+            }
+        }
+    </style>
+     <!-- Carousel End -->
+
+     <!-- About Start -->
+     <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h6 class="text-uppercase mb-3" style="font-family: 'Playfair Display', serif; font-weight: 700; letter-spacing: 2px; color: #343a40;">About Us</h6>
+                    <h1 class="display-4 mb-4" style="font-family: 'Playfair Display', serif; font-weight: 700; color: #212529;">
+                        <span style="color: #5bc0de;">25+ Years Experience</span> In Construction and Remodeling
+                    </h1>
+                    <p style="font-family: 'Lora', serif; font-weight: 400; line-height: 1.8; color: #495057; max-width: 800px; margin: 0 auto;">
+                        At King Construction, we are dedicated to transforming your projects into reality. Our track record 
+                        and commitment to excellence have positioned us as leaders in the industry, offering a wide range of 
+                        personalized services to meet your needs.
+                    </p>
+                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4" type="button" data-toggle="modal" data-target="#exampleModalLong" style="background-color: #5bc0de; color: #fff; border-radius: 50px; padding: 12px 24px; text-transform: uppercase; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: background-color 0.3s ease; border: none;">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About end-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">What Do We Do?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Custom Masonry:</strong> From the construction of complex structures to the finest detail in masonry, we tailor our services to your specific needs.</p>
+                    <p><strong>Steps:</strong> Design and execution of steps that combine functionality and aesthetics.</p>
+                    <p><strong>Retaining Walls:</strong> We build durable and resistant walls to guarantee the stability of your land.</p>
+                    <p><strong>Concrete Sidewalks:</strong> Creation of high-quality concrete sidewalks that ensure durability and resistance.</p>
+                    <p><strong>Concrete Driveways:</strong> We design driveways that stand the test of time and constant traffic.</p>
+                    <p><strong>Stone Veneer:</strong> We apply stone veneers for an elegant and durable appearance.</p>
+                    <p><strong>Belgian Blocks:</strong> Professional installation of Belgian blocks for a distinctive and robust finish.</p>
+                    <p><strong>Fireplaces:</strong> Construction and remodeling of fireplaces that bring warmth and style to your home.</p>
+                    <p><strong>Basement Waterproofing:</strong> Protect your basement from moisture with our effective waterproofing solutions.</p>
+                    <p><strong>Exterior French Drainage:</strong> We install French drainage systems to avoid water accumulation problems in your property.</p>
+                    <p>At King Construction, every project is an opportunity to demonstrate our dedication and skills. From first contact to completion, our team works with you to ensure that every detail is perfect. Your satisfaction is our priority and our experience is your guarantee.</p>
+                    <p>Contact us today to discuss how we can help you realize your vision with the quality and professionalism we are known for.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal end-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- About End -->
+
+
+    <!-- services star -->
+    <div class="custom-container py-5" id="service">
+        <div class="custom-inner-container py-5">
+            <div class="custom-section-title text-center mb-5">
+                <h6 class="custom-text-uppercase custom-text-primary custom-section-subtitle">Services</h6>
+                <h1 class="custom-font-secondary custom-display-4 custom-section-title">What We Cover</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-product-item mb-3">
+                        <div class="custom-product-img position-relative">
+                            <img class="custom-img-fluid" src="img/servicio6.jpeg" alt="" onclick="openImage(this)">
+                        </div>
+                        <div class="custom-bg-secondary text-center p-4">
+                            <h3 class="m-0">Retaining walls</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-product-item mb-3">
+                        <div class="custom-product-img position-relative">
+                            <img class="custom-img-fluid" src="img/sidewalk.jpeg" alt="" onclick="openImage(this)">
+                        </div>
+                        <div class="custom-bg-secondary text-center p-4">
+                            <h3 class="m-0">Concrete sidewalks</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-product-item mb-3">
+                        <div class="custom-product-img position-relative">
+                            <img class="custom-img-fluid" src="img/servicio1.jpeg" alt="" onclick="openImage(this)">
+                        </div>
+                        <div class="custom-bg-secondary text-center p-4">
+                            <h3 class="m-0">Fire places</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-product-item mb-3">
+                        <div class="custom-product-img position-relative">
+                            <img class="custom-img-fluid" src="img/servicio4.jpeg" alt="" onclick="openImage(this)">
+                        </div>
+                        <div class="custom-bg-secondary text-center p-4">
+                            <h3 class="m-0">Concrete driveways</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-product-item mb-3">
+                        <div class="custom-product-img position-relative">
+                            <img class="custom-img-fluid" src="img/servicio5.jpeg" alt="" onclick="openImage(this)">
+                        </div>
+                        <div class="custom-bg-secondary text-center p-4">
+                            <h3 class="m-0">Stone veneer</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="custom-product-item mb-3">
+                        <div class="custom-product-img position-relative">
+                            <img class="custom-img-fluid" src="img/servicio2.jpeg" alt="" onclick="openImage(this)">
+                        </div>
+                        <div class="custom-bg-secondary text-center p-4">
+                            <h3 class="m-0">Steps</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="imageOverlay" class="custom-overlay" onclick="closeImage()">
+        <img id="overlayImage" class="custom-overlay-img" src="" alt="">
+    </div>
+    
+    <style>
+        /* Contenedor principal */
+        .custom-container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        /* Contenedor interno */
+        .custom-inner-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Título de la sección */
+        .custom-section-title {
+            margin-bottom: 40px;
+        }
+        
+        .custom-text-uppercase {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .custom-section-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        
+        .custom-section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #333;
+            margin: 0;
+            position: relative;
+        }
+        
+        .custom-section-title::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 60px;
+            height: 5px;
+            background-color: #3498db;
+            transform: translateX(-50%);
+        }
+        
+        /* Estilos para el elemento de producto */
+        .custom-product-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .custom-product-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .custom-product-img {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .custom-img-fluid {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Ajusta el tamaño máximo */
+            object-fit: cover;
+        }
+        
+        .custom-bg-secondary {
+            background: #f8f9fa;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        /*.custom-bg-secondary h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.4rem;
+        }*/
+        
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+        .custom-bg-secondary h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.4rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            line-height: 1.4;
+        }
+        
+        /* Estilos para el overlay de imagen */
+        .custom-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .custom-overlay-img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+    
+    <script>
+        function openImage(imgElement) {
+            var overlay = document.getElementById('imageOverlay');
+            var overlayImage = document.getElementById('overlayImage');
+            overlayImage.src = imgElement.src;
+            overlay.style.display = 'flex';
+        }
+    
+        function closeImage() {
+            var overlay = document.getElementById('imageOverlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+
+    <!-- Service End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="project" style="padding: 120px 0; margin: 90px 0; background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 100%);">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 4px; color: #00d2ff;">Project</h6>
+            <h1 class="font-secondary display-4 text-white" style="font-size: 3.5rem; font-weight: 700; text-shadow: 0 4px 8px rgba(0,0,0,0.5);">Project Photo Gallery</h1>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item" style="position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6); transition: transform 0.4s ease, box-shadow 0.4s ease; background: rgba(255, 255, 255, 0.1);">
+                <img class="img-fluid w-100" src="img/image1.jpeg" alt="" style="transition: opacity 0.4s ease, transform 0.4s ease;">
+                <a class="btn btn-primary" href="img/image1.jpeg" data-lightbox="gallery" style="position: absolute; bottom: 20px; right: 20px; padding: 14px 22px; background: linear-gradient(135deg, #ff6f61, #d64d79); border: none; border-radius: 50%; box-shadow: 0 6px 18px rgba(0,0,0,0.4); color: #fff; font-size: 1.8rem; transition: background 0.4s ease, transform 0.4s ease; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa fa-2x fa-plus"></i>
+                </a>
+            </div>
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item" style="position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6); transition: transform 0.4s ease, box-shadow 0.4s ease; background: rgba(255, 255, 255, 0.1);">
+                <img class="img-fluid w-100" src="img/image2.jpeg" alt="" style="transition: opacity 0.4s ease, transform 0.4s ease;">
+                <a class="btn btn-primary" href="img/image2.jpeg" data-lightbox="gallery" style="position: absolute; bottom: 20px; right: 20px; padding: 14px 22px; background: linear-gradient(135deg, #ff6f61, #d64d79); border: none; border-radius: 50%; box-shadow: 0 6px 18px rgba(0,0,0,0.4); color: #fff; font-size: 1.8rem; transition: background 0.4s ease, transform 0.4s ease; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa fa-2x fa-plus"></i>
+                </a>
+            </div>
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item" style="position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6); transition: transform 0.4s ease, box-shadow 0.4s ease; background: rgba(255, 255, 255, 0.1);">
+                <img class="img-fluid w-100" src="img/image3.jpeg" alt="" style="transition: opacity 0.4s ease, transform 0.4s ease;">
+                <a class="btn btn-primary" href="img/image3.jpeg" data-lightbox="gallery" style="position: absolute; bottom: 20px; right: 20px; padding: 14px 22px; background: linear-gradient(135deg, #ff6f61, #d64d79); border: none; border-radius: 50%; box-shadow: 0 6px 18px rgba(0,0,0,0.4); color: #fff; font-size: 1.8rem; transition: background 0.4s ease, transform 0.4s ease; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa fa-2x fa-plus"></i>
+                </a>
+            </div>
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item" style="position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6); transition: transform 0.4s ease, box-shadow 0.4s ease; background: rgba(255, 255, 255, 0.1);">
+                <img class="img-fluid w-100" src="img/image4.jpeg" alt="" style="transition: opacity 0.4s ease, transform 0.4s ease;">
+                <a class="btn btn-primary" href="img/image4.jpeg" data-lightbox="gallery" style="position: absolute; bottom: 20px; right: 20px; padding: 14px 22px; background: linear-gradient(135deg, #ff6f61, #d64d79); border: none; border-radius: 50%; box-shadow: 0 6px 18px rgba(0,0,0,0.4); color: #fff; font-size: 1.8rem; transition: background 0.4s ease, transform 0.4s ease; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa fa-2x fa-plus"></i>
+                </a>
+            </div>
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item" style="position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6); transition: transform 0.4s ease, box-shadow 0.4s ease; background: rgba(255, 255, 255, 0.1);">
+                <img class="img-fluid w-100" src="img/image5.jpeg" alt="" style="transition: opacity 0.4s ease, transform 0.4s ease;">
+                <a class="btn btn-primary" href="img/image5.jpeg" data-lightbox="gallery" style="position: absolute; bottom: 20px; right: 20px; padding: 14px 22px; background: linear-gradient(135deg, #ff6f61, #d64d79); border: none; border-radius: 50%; box-shadow: 0 6px 18px rgba(0,0,0,0.4); color: #fff; font-size: 1.8rem; transition: background 0.4s ease, transform 0.4s ease; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa fa-2x fa-plus"></i>
+                </a>
+            </div>
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item" style="position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.6); transition: transform 0.4s ease, box-shadow 0.4s ease; background: rgba(255, 255, 255, 0.1);">
+                <img class="img-fluid w-100" src="img/image6.jpeg" alt="" style="transition: opacity 0.4s ease, transform 0.4s ease;">
+                <a class="btn btn-primary" href="img/image6.jpeg" data-lightbox="gallery" style="position: absolute; bottom: 20px; right: 20px; padding: 14px 22px; background: linear-gradient(135deg, #ff6f61, #d64d79); border: none; border-radius: 50%; box-shadow: 0 6px 18px rgba(0,0,0,0.4); color: #fff; font-size: 1.8rem; transition: background 0.4s ease, transform 0.4s ease; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa fa-2x fa-plus"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Gallery End -->
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5 bg-light" id="faqs">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <h6 class="text-uppercase text-primary mb-2" style="letter-spacing: 3px; font-weight: 600;">FAQs</h6>
+                <h1 class="display-4 font-weight-bold">What You Need to Know</h1>
+            </div>
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="card border-0 rounded-lg shadow-lg" style="background: #ffffff; border-left: 6px solid #007bff;">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-4" style="font-weight: 700;">Why buy our services?</h3>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-check-circle text-success mr-3" style="font-size: 1.5rem;"></i>
+                                    <span>All types of custom masonry</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-check-circle text-success mr-3" style="font-size: 1.5rem;"></i>
+                                    <span>Commitment to the customer</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-check-circle text-success mr-3" style="font-size: 1.5rem;"></i>
+                                    <span>Guaranteed quality and experience</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-0">
+                                    <i class="fa fa-check-circle text-success mr-3" style="font-size: 1.5rem;"></i>
+                                    <span>Wide range of specialized services</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-md-6">
+                    <div class="card border-0 rounded-lg shadow-lg" style="background: #ffffff; border-left: 6px solid #007bff;">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-4" style="font-weight: 700;">Why Choose Us?</h3>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-check-circle text-success mr-3" style="font-size: 1.5rem;"></i>
+                                    <span>Proven experience</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-check-circle text-success mr-3" style="font-size: 1.5rem;"></i>
+                                    <span>Tailor-made work</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-check-circle text-success mr-3" style="font-size: 1.5rem;"></i>
+                                    <span>Satisfaction guaranteed</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-0">
+                                    <i class="fa fa-check-circle text-success mr-3" style="font-size: 1.5rem;"></i>
+                                    <span>Efficiency in execution</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center mb-5">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px; font-family: 'Arial', sans-serif; font-weight: 600;">Contact</h6>
+                <h1 class="font-secondary display-4" style="font-family: 'Georgia', serif; font-weight: 700;">Get In Touch</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form" style="background: #f8f9fa; border-radius: 10px; padding: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="col-sm-6 control-group mb-3">
+                                    <input type="text" class="form-control bg-light border-0 py-4 px-3 rounded" name="name" placeholder="Name" required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-sm-6 control-group mb-3">
+                                    <input type="email" class="form-control bg-light border-0 py-4 px-3 rounded" name="email" id="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group mb-3">
+                                <input type="text" class="form-control bg-light border-0 py-4 px-3 rounded" name="subject" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group mb-4">
+                                <textarea class="form-control bg-light border-0 py-3 px-3 rounded" rows="6" name="message" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton" style="background-color: #5bc0de; color: #fff; border-radius: 50px; padding: 12px 24px; text-transform: uppercase; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: background-color 0.3s ease; border: none;">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light py-5 px-sm-3 px-lg-5" style="margin-top: 90px; border-top: 3px solid #007bff;">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px; font-weight: 600;">Our Office</h5>
+                    <p class="mb-0">West Orange, New Jersey, USA</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px; font-weight: 600;">Email Us</h5>
+                    <p class="mb-0"><a href="mailto:eric.albornoz72@gmail.com" style="color: #007bff; text-decoration: none;">eric.albornoz72@gmail.com</a></p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px; font-weight: 600;">Call Us</h5>
+                    <p class="mb-0"><a href="tel:+19735365668" style="color: #007bff; text-decoration: none;">973.536.5668</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-light text-center py-4" style="border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <div class="container">
+            <p class="m-0">
+                &copy; <span id="year"></span>. All Rights Reserved. Designed by <a href="" style="color: #007bff; text-decoration: none;">King Construction</a>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
